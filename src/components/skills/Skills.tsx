@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import SkillTitle from "./SkillTitle";
-import apollo from "../../../public/apollo.svg";
-import typegraphql from "../../../public/typegraphql.svg";
-import typeorm from "../../../public/typeorm.svg";
-import prisma from "../../../public/prisma.svg";
+import apollo from "@public/apollo.svg";
+import typegraphql from "@public/typegraphql.svg";
+import typeorm from "@public/typeorm.svg";
+import prisma from "@public/prisma.svg";
 import { useThemeContext } from "@/context/ThemeProvider";
 
 const Skills = () => {

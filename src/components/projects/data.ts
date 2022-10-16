@@ -1,6 +1,6 @@
-import pokebattle from "../../../public/pokebattle.png";
-import chatcito from "../../../public/chatcito.png";
-import sealgo from "../../../public/sealgo.png";
+import pokebattle from "@public/pokebattle.png";
+import chatcito from "@public/chatcito.png";
+import sealgo from "@public/sealgo.png";
 
 export interface IProject {
   title: string;

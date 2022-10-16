@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import profilePic from "../../public/profile.png";
+import profile from "@public/profile.png";
 import Links from "./Links";
 import { useThemeContext } from "@/context/ThemeProvider";
 
 const Intro = () => {
-  const { main } = useThemeContext();
+  const { base, main } = useThemeContext();
 
   return (
     <section
@@ -15,7 +15,7 @@ const Intro = () => {
       <div className={`rounded-full border border-${main}-400 p-1 md:m-8`}>
         <div className="relative aspect-square h-32 md:h-48">
           <Image
-            src={profilePic}
+            src={profile}
             alt="profile"
             layout="fill"
             className="rounded-full"
@@ -31,6 +31,14 @@ const Intro = () => {
           <br /> Full Stack Developer
         </h3>
         <Links />
+
+        <a
+          href="/resume.pdf"
+          download
+          className={`py-2 px-4 bg-${main}-400 text-${base} rounded-md font-bold hover:bg-${main}-300`}
+        >
+          Get Resume
+        </a>
       </div>
     </section>
   );
