@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .skill-container {
+    @apply flex flex-col items-center justify-center gap-1;
+  }
+}
