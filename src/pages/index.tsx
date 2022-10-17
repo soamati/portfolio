@@ -5,23 +5,23 @@ import Projects from "@/components/projects/Projects";
 import Intro from "@/components/Intro";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import { useThemeContext } from "@/context/ThemeProvider";
+import Head from "next/head";
+import AppContainer from "@/components/AppContainer";
 
 const Home: NextPage = () => {
-  const { base } = useThemeContext();
-
   return (
-    <div className={`min-w-screen bg-${base}`}>
-      <div className="mx-auto flex min-h-screen max-w-3xl flex-col gap-16 px-2 pb-6 font-roboto text-gray-50">
+    <>
+      <Head>
+        <title>Matias Ruiz | Portfolio</title>
+      </Head>
+      <AppContainer>
         <Nav />
-
         <Intro />
         <Skills />
         <Projects />
-
         <Footer />
-      </div>
-    </div>
+      </AppContainer>
+    </>
   );
 };
 
