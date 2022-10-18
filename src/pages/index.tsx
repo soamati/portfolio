@@ -5,23 +5,17 @@ import Projects from "@/components/projects/Projects";
 import Intro from "@/components/Intro";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import Head from "next/head";
-import AppContainer from "@/components/AppContainer";
+import MainLayout from "@/components/MainLayout";
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>Matias Ruiz | Portfolio</title>
-      </Head>
-      <AppContainer>
-        <Nav />
-        <Intro />
-        <Skills />
-        <Projects />
-        <Footer />
-      </AppContainer>
-    </>
+    <MainLayout>
+      <Nav />
+      <Intro />
+      <Skills />
+      <Projects />
+      <Footer />
+    </MainLayout>
   );
 };
 
