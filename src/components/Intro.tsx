@@ -27,7 +27,7 @@ const Intro = () => {
       <div className="flex flex-col items-center gap-4 md:items-start">
         <h1 className="text-4xl font-medium">Matias Ruiz</h1>
         <h3 className={`text-center text-lg text-${main}-300 md:text-left`}>
-          Computer Engineering Student and
+          Computer Engineer and
           <br /> Full Stack Developer
         </h3>
         <Links />
