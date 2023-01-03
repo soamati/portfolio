@@ -5,6 +5,7 @@ import apollo from "@public/apollo.svg";
 import typegraphql from "@public/typegraphql.svg";
 import typeorm from "@public/typeorm.svg";
 import prisma from "@public/prisma.svg";
+import python from "@public/python.svg";
 import { useThemeContext } from "@/context/ThemeProvider";
 
 const Skills = () => {
@@ -20,7 +21,7 @@ const Skills = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <SkillTitle name="Frontend" />
+        <SkillTitle name="Languages" />
         <div className="grid grid-cols-3 gap-6 md:grid-cols-4">
           <div className="skill-container">
             <i className="devicon-javascript-plain colored text-3xl"></i>
@@ -29,6 +30,26 @@ const Skills = () => {
           <div className="skill-container">
             <i className="devicon-typescript-plain colored text-3xl"></i>
             <p className="text-xs">TypeScript</p>
+          </div>
+          <div className="skill-container">
+            <div className="relative aspect-square h-[36px]">
+              <Image src={python} alt="prisma-icon" layout="fill" />
+            </div>
+            <p className="text-xs">Python</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-4">
+        <SkillTitle name="Frontend" />
+        <div className="grid grid-cols-3 gap-6 md:grid-cols-4">
+          <div className="skill-container">
+            <i className="devicon-html5-plain colored text-3xl"></i>
+            <p className="text-xs">HTML</p>
+          </div>
+          <div className="skill-container">
+            <i className="devicon-css3-plain colored text-3xl"></i>
+            <p className="text-xs">CSS</p>
           </div>
           <div className="skill-container">
             <i className="devicon-react-original colored text-3xl"></i>
@@ -91,6 +112,10 @@ const Skills = () => {
           <div className="skill-container">
             <i className="devicon-postgresql-plain colored text-3xl"></i>
             <p className="text-xs">PostgreSQL</p>
+          </div>
+          <div className="skill-container">
+            <i className="devicon-mongodb-plain colored text-3xl"></i>
+            <p className="text-xs">MongoDB</p>
           </div>
         </div>
       </div>
