@@ -7,6 +7,12 @@ import { useThemeContext } from "@/context/ThemeProvider";
 const Intro = () => {
   const { base, main } = useThemeContext();
 
+  const incrementCount = React.useCallback(() => {
+    fetch("/api/resume", {
+      method: "POST",
+    });
+  }, []);
+
   return (
     <section
       id="intro"
@@ -33,6 +39,7 @@ const Intro = () => {
         <Links />
 
         <a
+          onClick={incrementCount}
           href="/resume.pdf"
           download
           className={`py-2 px-4 bg-${main}-400 text-${base} rounded-md font-bold hover:bg-${main}-300`}
